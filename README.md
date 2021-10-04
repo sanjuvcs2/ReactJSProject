@@ -1,6 +1,6 @@
 # Sanju Balakrishnan POC Project - React Web Application
 
-Description: POC React Web Application.
+Description: Sanju Balakrishna POC React Web Application.
 
 ## Initial Code Setup
 
