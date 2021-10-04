@@ -76,6 +76,12 @@ describe('Component: Cart', () => {
             const simulateClickEmpt = wrapper.find('Summary').prop('checkPromoCode');
             simulateClickEmpt(eventEmptTest);
         });
+
+        window.alert = jest.fn();
+
+        test("login api resolves true", () => {
+            window.alert.mockClear();
+        })
     });
 });
 

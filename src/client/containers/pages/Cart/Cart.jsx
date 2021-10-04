@@ -55,7 +55,7 @@ function Cart() {
                 return;
             }
         }
-        alert("Sorry, the Promotional code you entered is not valid!");
+        window.alert("Sorry, the Promotional code you entered is not valid!");
     };
 
     return (
