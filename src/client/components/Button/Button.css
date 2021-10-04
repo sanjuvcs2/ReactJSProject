@@ -1,0 +1,61 @@
+.btn {
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.8px;
+}
+.btn:disabled {
+    opacity: 0.5;
+    box-shadow: none;
+    cursor: no-drop;
+}
+.btn.btnText, .btn.btnLink {
+    background: none;
+    border: 0;
+    box-shadow: none;
+}
+.btn.btnText:active, .btn.btnLink:active {
+    border: 0;
+}
+.btn.btnLg {
+    min-width: 160px;
+    font-size: 16px;
+    padding: 12px 0;
+}
+.btn.btnLg.btnText, .btn.btnLg.btnLink {
+    font-size: 20px;
+}
+.btn.btnMd {
+    font-size: 14px;
+    height: 42px;
+    border-radius: 21px;
+    padding: 0 25px;
+}
+.btn.btnMd.btnText, .btn.btnMd.btnLink {
+    font-size: 16px;
+}
+.btn.btnSm {
+    font-size: 14px;
+    height: 42px;
+    border-radius: 21px;
+    padding: 0 21px;
+}
+.btn.btnSm.btnText, .btn.btnSm.btnLink {
+    font-size: 14px;
+}
+.btn.btnXl {
+    width: 100%;
+}
+.btn.btnDefault {
+    background-color: #fff;
+    border: solid 1px #999;
+    letter-spacing: 0.8px;
+}
+
+.btn.btnText {
+    font-weight: bold;
+}
+.btn.btnLink {
+    text-decoration: underline;
+    font-weight: normal;
+}

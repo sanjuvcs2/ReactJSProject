@@ -1,141 +1,303 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1633095118885" clover="3.2.0">
-  <project timestamp="1633095118885" name="All files">
-    <metrics statements="88" coveredstatements="11" conditionals="72" coveredconditionals="9" methods="20" coveredmethods="5" elements="180" coveredelements="25" complexity="0" loc="88" ncloc="88" packages="6" files="10" classes="10"/>
-    <package name="client">
-      <metrics statements="6" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0"/>
-      <file name="App.js" path="C:\Users\SanjuBalakrishnan\Desktop\Certificate-Project\simple-react-full-stack\src\client\App.js">
-        <metrics statements="6" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
+<coverage generated="1633361553182" clover="3.2.0">
+  <project timestamp="1633361553183" name="All files">
+    <metrics statements="184" coveredstatements="181" conditionals="82" coveredconditionals="77" methods="72" coveredmethods="70" elements="338" coveredelements="328" complexity="0" loc="184" ncloc="184" packages="14" files="24" classes="24"/>
+    <package name="actions">
+      <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="10"/>
+      <file name="ContactMeAction.js" path="C:\Users\SanjuBalakrishnan\Desktop\Certificate-Project\ReactWorkSpace\ReactJSProject\src\client\actions\ContactMeAction.js">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
       </file>
-    </package>
-    <package name="client.actions">
-      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-      <file name="LoaderAction.js" path="C:\Users\SanjuBalakrishnan\Desktop\Certificate-Project\simple-react-full-stack\src\client\actions\LoaderAction.js">
+      <file name="LoaderAction.js" path="C:\Users\SanjuBalakrishnan\Desktop\Certificate-Project\ReactWorkSpace\ReactJSProject\src\client\actions\LoaderAction.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="3" count="1" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
       </file>
-      <file name="UserInfoAction.js" path="C:\Users\SanjuBalakrishnan\Desktop\Certificate-Project\simple-react-full-stack\src\client\actions\UserInfoAction.js">
+      <file name="LoginAction.js" path="C:\Users\SanjuBalakrishnan\Desktop\Certificate-Project\ReactWorkSpace\ReactJSProject\src\client\actions\LoginAction.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="9" type="stmt"/>
+      </file>
+      <file name="PageAction.js" path="C:\Users\SanjuBalakrishnan\Desktop\Certificate-Project\ReactWorkSpace\ReactJSProject\src\client\actions\PageAction.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="4" type="stmt"/>
+      </file>
+      <file name="UserInfoAction.js" path="C:\Users\SanjuBalakrishnan\Desktop\Certificate-Project\ReactWorkSpace\ReactJSProject\src\client\actions\UserInfoAction.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="3" count="1" type="stmt"/>
       </file>
     </package>
-    <package name="client.components.Loader">
-      <metrics statements="7" coveredstatements="0" conditionals="8" coveredconditionals="0" methods="3" coveredmethods="0"/>
-      <file name="Loader.jsx" path="C:\Users\SanjuBalakrishnan\Desktop\Certificate-Project\simple-react-full-stack\src\client\components\Loader\Loader.jsx">
-        <metrics statements="7" coveredstatements="0" conditionals="8" coveredconditionals="0" methods="3" coveredmethods="0"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
-        <line num="33" count="0" type="stmt"/>
-        <line num="35" count="0" type="stmt"/>
-        <line num="56" count="0" type="stmt"/>
+    <package name="common">
+      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="Constants.js" path="C:\Users\SanjuBalakrishnan\Desktop\Certificate-Project\ReactWorkSpace\ReactJSProject\src\client\common\Constants.js">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="2" count="5" type="stmt"/>
+        <line num="19" count="5" type="stmt"/>
+        <line num="34" count="5" type="stmt"/>
+        <line num="36" count="5" type="stmt"/>
+        <line num="38" count="5" type="stmt"/>
+        <line num="53" count="5" type="stmt"/>
+        <line num="60" count="5" type="stmt"/>
       </file>
     </package>
-    <package name="client.containers.pages.LoginPage">
-      <metrics statements="24" coveredstatements="0" conditionals="10" coveredconditionals="0" methods="5" coveredmethods="0"/>
-      <file name="LoginPage.jsx" path="C:\Users\SanjuBalakrishnan\Desktop\Certificate-Project\simple-react-full-stack\src\client\containers\pages\LoginPage\LoginPage.jsx">
-        <metrics statements="24" coveredstatements="0" conditionals="10" coveredconditionals="0" methods="5" coveredmethods="0"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="12" count="0" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
-        <line num="31" count="0" type="stmt"/>
-        <line num="32" count="0" type="stmt"/>
-        <line num="33" count="0" type="stmt"/>
-        <line num="35" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="36" count="0" type="stmt"/>
-        <line num="37" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="38" count="0" type="stmt"/>
-        <line num="39" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="40" count="0" type="stmt"/>
-        <line num="41" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="45" count="0" type="stmt"/>
-        <line num="46" count="0" type="stmt"/>
-        <line num="47" count="0" type="stmt"/>
-        <line num="49" count="0" type="stmt"/>
-        <line num="53" count="0" type="stmt"/>
-        <line num="54" count="0" type="stmt"/>
-        <line num="55" count="0" type="stmt"/>
-        <line num="59" count="0" type="stmt"/>
-        <line num="82" count="0" type="stmt"/>
+    <package name="common.Utils">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Utils.js" path="C:\Users\SanjuBalakrishnan\Desktop\Certificate-Project\ReactWorkSpace\ReactJSProject\src\client\common\Utils\Utils.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="70" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.Button">
+      <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <file name="Button.jsx" path="C:\Users\SanjuBalakrishnan\Desktop\Certificate-Project\ReactWorkSpace\ReactJSProject\src\client\components\Button\Button.jsx">
+        <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="6" type="stmt"/>
+        <line num="13" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="14" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="15" count="6" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.ErrorPage">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <file name="ErrorPage.jsx" path="C:\Users\SanjuBalakrishnan\Desktop\Certificate-Project\ReactWorkSpace\ReactJSProject\src\client\components\ErrorPage\ErrorPage.jsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.Layout">
+      <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <file name="Layout.js" path="C:\Users\SanjuBalakrishnan\Desktop\Certificate-Project\ReactWorkSpace\ReactJSProject\src\client\components\Layout\Layout.js">
+        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="7" count="7" type="stmt"/>
+        <line num="10" count="7" type="stmt"/>
+        <line num="14" count="14" type="stmt"/>
+        <line num="15" count="14" type="stmt"/>
+        <line num="20" count="14" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="25" count="23" type="stmt"/>
+        <line num="26" count="23" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.Loader">
+      <metrics statements="7" coveredstatements="7" conditionals="8" coveredconditionals="8" methods="3" coveredmethods="3"/>
+      <file name="Loader.jsx" path="C:\Users\SanjuBalakrishnan\Desktop\Certificate-Project\ReactWorkSpace\ReactJSProject\src\client\components\Loader\Loader.jsx">
+        <metrics statements="7" coveredstatements="7" conditionals="8" coveredconditionals="8" methods="3" coveredmethods="3"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="33" count="10" type="stmt"/>
+        <line num="35" count="10" type="stmt"/>
+        <line num="56" count="6" type="stmt"/>
+      </file>
+    </package>
+    <package name="containers.pages.AboutUs">
+      <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+      <file name="AboutUs.jsx" path="C:\Users\SanjuBalakrishnan\Desktop\Certificate-Project\ReactWorkSpace\ReactJSProject\src\client\containers\pages\AboutUs\AboutUs.jsx">
+        <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="28" count="3" type="stmt"/>
+        <line num="29" count="3" type="stmt"/>
+        <line num="30" count="3" type="stmt"/>
+        <line num="56" count="1" type="stmt"/>
+        <line num="57" count="1" type="stmt"/>
+        <line num="62" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="containers.pages.Cart">
+      <metrics statements="42" coveredstatements="41" conditionals="10" coveredconditionals="8" methods="16" coveredmethods="15"/>
+      <file name="Cart.jsx" path="C:\Users\SanjuBalakrishnan\Desktop\Certificate-Project\ReactWorkSpace\ReactJSProject\src\client\containers\pages\Cart\Cart.jsx">
+        <metrics statements="32" coveredstatements="31" conditionals="8" coveredconditionals="6" methods="9" coveredmethods="8"/>
+        <line num="12" count="8" type="stmt"/>
+        <line num="13" count="8" type="stmt"/>
+        <line num="14" count="8" type="stmt"/>
+        <line num="15" count="8" type="stmt"/>
+        <line num="17" count="8" type="stmt"/>
+        <line num="18" count="12" type="stmt"/>
+        <line num="20" count="8" type="stmt"/>
+        <line num="21" count="12" type="stmt"/>
+        <line num="23" count="8" type="stmt"/>
+        <line num="25" count="8" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="30" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
+        <line num="36" count="2" type="stmt"/>
+        <line num="39" count="8" type="stmt"/>
+        <line num="40" count="2" type="stmt"/>
+        <line num="41" count="4" type="stmt"/>
+        <line num="43" count="2" type="stmt"/>
+        <line num="46" count="8" type="stmt"/>
+        <line num="47" count="2" type="stmt"/>
+        <line num="50" count="8" type="stmt"/>
+        <line num="51" count="2" type="stmt"/>
+        <line num="58" count="2" type="stmt"/>
+        <line num="61" count="8" type="stmt"/>
         <line num="83" count="0" type="stmt"/>
-        <line num="90" count="0" type="stmt"/>
+        <line num="90" count="1" type="stmt"/>
+        <line num="94" count="1" type="stmt"/>
+      </file>
+      <file name="ProductList.jsx" path="C:\Users\SanjuBalakrishnan\Desktop\Certificate-Project\ReactWorkSpace\ReactJSProject\src\client\containers\pages\Cart\ProductList.jsx">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
+        <line num="6" count="13" type="stmt"/>
+        <line num="10" count="22" type="stmt"/>
+        <line num="34" count="2" type="stmt"/>
+        <line num="40" count="2" type="stmt"/>
+        <line num="60" count="2" type="stmt"/>
+        <line num="66" count="2" type="stmt"/>
+      </file>
+      <file name="Summary.jsx" path="C:\Users\SanjuBalakrishnan\Desktop\Certificate-Project\ReactWorkSpace\ReactJSProject\src\client\containers\pages\Cart\Summary.jsx">
+        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="12" count="12" type="stmt"/>
+        <line num="13" count="12" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="53" count="1" type="stmt"/>
       </file>
     </package>
-    <package name="client.reducers">
-      <metrics statements="40" coveredstatements="8" conditionals="49" coveredconditionals="9" methods="4" coveredmethods="2"/>
-      <file name="LoaderReducer.js" path="C:\Users\SanjuBalakrishnan\Desktop\Certificate-Project\simple-react-full-stack\src\client\reducers\LoaderReducer.js">
+    <package name="containers.pages.ChoosePage">
+      <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="5"/>
+      <file name="ChoosePage.jsx" path="C:\Users\SanjuBalakrishnan\Desktop\Certificate-Project\ReactWorkSpace\ReactJSProject\src\client\containers\pages\ChoosePage\ChoosePage.jsx">
+        <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="5"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="32" count="3" type="stmt"/>
+        <line num="33" count="3" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
+        <line num="56" count="1" type="stmt"/>
+        <line num="61" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="containers.pages.ContactMe">
+      <metrics statements="21" coveredstatements="20" conditionals="10" coveredconditionals="8" methods="11" coveredmethods="10"/>
+      <file name="ContactMe.jsx" path="C:\Users\SanjuBalakrishnan\Desktop\Certificate-Project\ReactWorkSpace\ReactJSProject\src\client\containers\pages\ContactMe\ContactMe.jsx">
+        <metrics statements="21" coveredstatements="20" conditionals="10" coveredconditionals="8" methods="11" coveredmethods="10"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="26" count="5" type="stmt"/>
+        <line num="27" count="5" type="stmt"/>
+        <line num="37" count="5" type="cond" truecount="1" falsecount="1"/>
+        <line num="38" count="5" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="51" count="2" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
+        <line num="75" count="0" type="stmt"/>
+        <line num="79" count="13" type="stmt"/>
+        <line num="80" count="13" type="stmt"/>
+        <line num="81" count="13" type="cond" truecount="2" falsecount="0"/>
+        <line num="82" count="10" type="stmt"/>
+        <line num="84" count="3" type="stmt"/>
+        <line num="85" count="3" type="stmt"/>
+        <line num="139" count="3" type="stmt"/>
+        <line num="143" count="1" type="stmt"/>
+        <line num="144" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="containers.pages.HomePage">
+      <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+      <file name="HomePage.jsx" path="C:\Users\SanjuBalakrishnan\Desktop\Certificate-Project\ReactWorkSpace\ReactJSProject\src\client\containers\pages\HomePage\HomePage.jsx">
+        <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="25" count="3" type="stmt"/>
+        <line num="26" count="3" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="52" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="containers.pages.LoginPage">
+      <metrics statements="24" coveredstatements="23" conditionals="20" coveredconditionals="19" methods="6" coveredmethods="6"/>
+      <file name="LoginPage.jsx" path="C:\Users\SanjuBalakrishnan\Desktop\Certificate-Project\ReactWorkSpace\ReactJSProject\src\client\containers\pages\LoginPage\LoginPage.jsx">
+        <metrics statements="24" coveredstatements="23" conditionals="20" coveredconditionals="19" methods="6" coveredmethods="6"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="24" count="11" type="stmt"/>
+        <line num="25" count="11" type="stmt"/>
+        <line num="35" count="11" type="stmt"/>
+        <line num="38" count="11" type="stmt"/>
+        <line num="39" count="5" type="stmt"/>
+        <line num="40" count="5" type="stmt"/>
+        <line num="42" count="5" type="cond" truecount="4" falsecount="0"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="48" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="54" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="55" count="1" type="stmt"/>
+        <line num="61" count="3" type="cond" truecount="4" falsecount="0"/>
+        <line num="62" count="1" type="stmt"/>
+        <line num="68" count="1" type="stmt"/>
+        <line num="69" count="1" type="stmt"/>
+        <line num="75" count="2" type="stmt"/>
+        <line num="85" count="19" type="stmt"/>
+        <line num="86" count="19" type="stmt"/>
+        <line num="122" count="1" type="stmt"/>
+        <line num="123" count="8" type="stmt"/>
+        <line num="128" count="8" type="stmt"/>
+      </file>
+    </package>
+    <package name="reducers">
+      <metrics statements="24" coveredstatements="24" conditionals="24" coveredconditionals="24" methods="5" coveredmethods="5"/>
+      <file name="ContactInfoReducer.js" path="C:\Users\SanjuBalakrishnan\Desktop\Certificate-Project\ReactWorkSpace\ReactJSProject\src\client\reducers\ContactInfoReducer.js">
+        <metrics statements="6" coveredstatements="6" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
+        <line num="7" count="3" type="cond" truecount="3" falsecount="0"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+      </file>
+      <file name="LoaderReducer.js" path="C:\Users\SanjuBalakrishnan\Desktop\Certificate-Project\ReactWorkSpace\ReactJSProject\src\client\reducers\LoaderReducer.js">
         <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
         <line num="4" count="3" type="cond" truecount="3" falsecount="0"/>
         <line num="6" count="1" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
         <line num="10" count="1" type="stmt"/>
       </file>
-      <file name="LoginReducer.js" path="C:\Users\SanjuBalakrishnan\Desktop\Certificate-Project\simple-react-full-stack\src\client\reducers\LoginReducer.js">
-        <metrics statements="32" coveredstatements="0" conditionals="40" coveredconditionals="0" methods="2" coveredmethods="0"/>
-        <line num="25" count="0" type="stmt"/>
-        <line num="42" count="0" type="stmt"/>
-        <line num="44" count="0" type="cond" truecount="0" falsecount="4"/>
-        <line num="45" count="0" type="stmt"/>
-        <line num="46" count="0" type="stmt"/>
-        <line num="48" count="0" type="stmt"/>
-        <line num="52" count="0" type="cond" truecount="0" falsecount="11"/>
-        <line num="54" count="0" type="stmt"/>
-        <line num="55" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="56" count="0" type="stmt"/>
-        <line num="57" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="58" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="59" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="61" count="0" type="stmt"/>
-        <line num="71" count="0" type="stmt"/>
-        <line num="81" count="0" type="stmt"/>
-        <line num="88" count="0" type="stmt"/>
-        <line num="92" count="0" type="stmt"/>
-        <line num="98" count="0" type="cond" truecount="0" falsecount="3"/>
-        <line num="99" count="0" type="stmt"/>
-        <line num="108" count="0" type="stmt"/>
-        <line num="112" count="0" type="stmt"/>
-        <line num="118" count="0" type="cond" truecount="0" falsecount="3"/>
-        <line num="119" count="0" type="stmt"/>
-        <line num="128" count="0" type="stmt"/>
-        <line num="133" count="0" type="stmt"/>
-        <line num="139" count="0" type="cond" truecount="0" falsecount="3"/>
-        <line num="140" count="0" type="stmt"/>
-        <line num="150" count="0" type="stmt"/>
-        <line num="156" count="0" type="stmt"/>
-        <line num="159" count="0" type="stmt"/>
-        <line num="165" count="0" type="stmt"/>
+      <file name="LoginReducer.js" path="C:\Users\SanjuBalakrishnan\Desktop\Certificate-Project\ReactWorkSpace\ReactJSProject\src\client\reducers\LoginReducer.js">
+        <metrics statements="5" coveredstatements="5" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="12" count="3" type="cond" truecount="3" falsecount="0"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
       </file>
-      <file name="UserInfoReducer.js" path="C:\Users\SanjuBalakrishnan\Desktop\Certificate-Project\simple-react-full-stack\src\client\reducers\UserInfoReducer.js">
+      <file name="PageContentReducer.js" path="C:\Users\SanjuBalakrishnan\Desktop\Certificate-Project\ReactWorkSpace\ReactJSProject\src\client\reducers\PageContentReducer.js">
+        <metrics statements="5" coveredstatements="5" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="12" count="3" type="cond" truecount="3" falsecount="0"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+      </file>
+      <file name="UserInfoReducer.js" path="C:\Users\SanjuBalakrishnan\Desktop\Certificate-Project\ReactWorkSpace\ReactJSProject\src\client\reducers\UserInfoReducer.js">
         <metrics statements="4" coveredstatements="4" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
         <line num="4" count="4" type="cond" truecount="3" falsecount="0"/>
         <line num="6" count="1" type="stmt"/>
         <line num="10" count="1" type="stmt"/>
         <line num="14" count="2" type="stmt"/>
-      </file>
-    </package>
-    <package name="client.redux">
-      <metrics statements="8" coveredstatements="0" conditionals="3" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <file name="ContextReducer.js" path="C:\Users\SanjuBalakrishnan\Desktop\Certificate-Project\simple-react-full-stack\src\client\redux\ContextReducer.js">
-        <metrics statements="3" coveredstatements="0" conditionals="3" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="5" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-      </file>
-      <file name="Store.js" path="C:\Users\SanjuBalakrishnan\Desktop\Certificate-Project\simple-react-full-stack\src\client\redux\Store.js">
-        <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
       </file>
     </package>
   </project>

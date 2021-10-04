@@ -3,10 +3,29 @@
     padding: 0;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
+    font-family: 'Roboto', sans-serif;
   }
   
+  label.errorMsg {
+    color: red !important;
+    width: 49%;
+    padding-top: 7px;
+  }
+
+  .errorMsgBtm {
+    color: red !important;
+    width: 72%;
+    margin-bottom: 14px;
+  }
+
+  .success {
+    color: green;
+    padding: 14px;
+    font-size: 20px;
+}
+
   html {
-    background: #b5c0ad;
+    /* background: #b5c0ad; */
     min-height: 720px;
     min-width: 320px;
   }
@@ -16,7 +35,7 @@
     height: 100%;
   }
   
-  #root {
+  #Login {
     align-items: center;
     display: flex;
     height: 100%;
@@ -28,21 +47,23 @@
     border-radius: 4px;
     box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
     max-width: 615px;
-    padding-bottom: 66px;
-    padding-top: 46px;
+    padding-bottom: 6px;
+    padding-top: 6px;
     text-align: center;
     width: 90%;
+    margin-top: 55px;
   }
   .App > .logo {
     max-width: 90%;
   }
   .App > .form {
-    margin-bottom: 98px;
-    margin-top: 41px;
+    margin-bottom: 36px;
+    margin-top: 26px;
   }
   
-  .input-group {
+  #form .input-group {
     margin-bottom: 26px;
+    display: block !important;
   }
   .input-group:nth-last-child(-n + 2) {
     margin-bottom: 50px;
@@ -96,10 +117,10 @@
     width: 80%;
   }
   button.primary {
-    background: #f58733;
+    background-color: #e90000;
   }
   button.primary:hover {
-    background: #ea6c0b;
+    background-color: #e90000;
   }
   button.secondary {
     background: #c1d7aa;
@@ -111,4 +132,8 @@
   .logo {
       width: 80px;
       height: 80px;
+  }
+  .passDetails {
+    text-align: left;
+    padding: 0 16% 13px;
   }

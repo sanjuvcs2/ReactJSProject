@@ -14,7 +14,9 @@ module.exports = {
     "<rootDir>/src/client/routes.jsx",
     "<rootDir>/src/client/sagas",
     "<rootDir>/src/client/server.js",
-    "<rootDir>/src/client/store.js",
+    "<rootDir>/src/client/Redux/Store.js",
+    "<rootDir>/src/server/store.js",
+    "<rootDir>/src/client/redux",
     "<rootDir>/src/client/mock"
   ],
   bail: true,
@@ -38,10 +40,10 @@ module.exports = {
   ],
   coverageThreshold: {
     global: {
-      statements: 90,
+      statements: 80,
       branches: 80,
-      functions: 90,
-      lines: 90
+      functions: 80,
+      lines: 80
     }
   }
 };

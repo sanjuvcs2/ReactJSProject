@@ -2,78 +2,118 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-// import _get from 'lodash/get';
-import classNames from 'classnames/bind';
+import _get from 'lodash/get';
+import _isEmpty from 'lodash/isEmpty';
 import logo from "../../../assets/images/favi.png";
-import * as styles from './LoginPage.css';
+import { getUserDetails } from '../../../actions/LoginAction';
+import { loginData } from '../../../common/Constants'
+import './LoginPage.css';
 
-const cx = classNames.bind(styles);
 export class LoginPage extends Component {
     static propTypes = {
         actions: PropTypes.objectOf(PropTypes.func),
-        breadcrumbs: PropTypes.oneOfType([PropTypes.array]),
-        localization: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-        message: PropTypes.oneOfType([PropTypes.object, PropTypes.string])
+        loginDetails: PropTypes.oneOfType([PropTypes.object, PropTypes.string])
     };
 
     static defaultProps = {
         actions: {},
-        breadcrumbs: [],
-        localization: {},
-        message: {}
+        loginDetails: {}
     };
 
-    /*constructor(props) {
+    constructor(props) {
         super(props);
-        //props.actions.getPageContent({ pageId: PAGE_ID.UPDATE_PASSWORD });
-    }*/
+        this.state = {
+            userError: false,
+            pwdError: false,
+            isSuccess: false,
+            isBothWrong: false,
+            text: ''
+        }
+    }
+
+    componentDidMount() {
+        this.props.actions.getUserDetails();
+    }
 
     handleSubmit = e => {
+        const { loginDetails } = this.props;
         e.preventDefault();
-        console.log(e.target.user.value);
 
-        if (!e.target.user.value) {
-            alert("User is required");
+        if (!e.target.user.value && !_isEmpty(loginDetails)) {
+            this.setState({
+                text: loginData.validUser,
+                userError: true,
+                isBothWrong: false
+            });
         } else if (!e.target.user.value) {
-            alert("Valid User is required");
+            this.setState({
+                text: loginData.validUserdata,
+                userError: true,
+                isBothWrong: false
+            })
         } else if (!e.target.password.value) {
-            alert("Password is required");
-        } else if (
-            e.target.user.value === "test" &&
-            e.target.password.value === "password"
-        ) {
-            alert("Successfully logged in");
+            this.setState({
+                text: loginData.pwdUser,
+                pwdError: true,
+                userError: false,
+                isBothWrong: false
+            })
+        } else if (e.target.user.value === loginDetails.data.user && e.target.password.value === loginDetails.data.password) {
+            this.setState({
+                isSuccess: true,
+                pwdError: false,
+                userError: false,
+                isBothWrong: false
+            });
             e.target.user.value = "";
             e.target.password.value = "";
+            /* istanbul ignore next */
+            setTimeout(() => {
+                window.location.href = '/home';
+            }, 500);
         } else {
-            alert("Wrong User or password combination");
+            this.setState({
+                text: loginData.wrongValid,
+                isBothWrong: true,
+                pwdError: false,
+                userError: false
+            });
         }
     };
 
-    handleClick = e => {
-        e.preventDefault();
-        alert("Goes to registration page");
-    };
-
     render() {
+        const { userError, pwdError, isSuccess, text, isBothWrong } = this.state;
         return (
-            <div className={cx("App")} id="Login">
-                <img src={logo} className={cx("logo")} alt="POC Login" />
-                <h1>Let's get started</h1>
-                <form className="form" onSubmit={this.handleSubmit}>
-                    <div className="input-group">
-                        <label htmlFor="user">User</label>
-                        <input type="user" name="user" placeholder="test" />
-                    </div>
-                    <div className="input-group">
-                        <label htmlFor="password">Password</label>
-                        <input type="password" name="password" />
-                    </div>
-                    <button className="primary">Submit</button>
-                </form>
-                <button className="secondary" onClick={this.handleClick}>
-                    Register
-                </button>
+            <div id="Login">
+                <div className={"App"}>
+                    <img src={logo} className={"logo"} alt="POC Login" />
+                    <h1>{loginData.title}</h1>
+                    <form className="form" onSubmit={this.handleSubmit} id="form">
+                        <div className="input-group">
+                            <label htmlFor="user">{loginData.user}</label>
+                            <input type="user" name="user" placeholder="test" />
+                            {userError && (
+                                <label className={('errorMsg')} automation-id='at-error-incorrect-login'>
+                                    {text}
+                                </label>
+                            )}
+                        </div>
+                        <div className="input-group">
+                            <label htmlFor="password">{loginData.pwd}</label>
+                            <input type="password" name="password" placeholder="password" />
+                            {pwdError && (
+                                <label className={('errorMsg')} automation-id='at-error-incorrect-login'>
+                                    {text}
+                                </label>
+                            )}
+                        </div>
+                        <div className='passDetails'><label>{loginData.userd} <strong>{loginData.test}</strong></label><br />
+                            <label>{loginData.pwdss}<strong>{loginData.pwdssData}</strong></label></div>
+                        {isBothWrong && <label className={('errorMsgBtm')}>{text}</label>}
+                        <button className="primary">{loginData.submit}</button>
+                        {isSuccess && <p className={('success')}>{loginData.successful}</p>}
+                    </form>
+                </div>
             </div>
         );
     }
@@ -81,17 +121,14 @@ export class LoginPage extends Component {
 
 const mapStateToProps = state => {
     return {
-        /*breadcrumbs: _get(state, 'pageContent.breadcrumbs'),
-        localization: _get(state, 'pageContent.localization'),
-        message: _get(state, 'loginPage.message')*/
+        loginDetails: _get(state, 'loginDetails')
     };
 };
 
 const mapDispatchToProps = dispatch => ({
     actions: bindActionCreators(
         {
-            //clearLoginMessage,
-            //getPageContent
+            getUserDetails,
         },
         dispatch
     )
