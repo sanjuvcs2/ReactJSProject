@@ -6,7 +6,8 @@ import _get from 'lodash/get';
 import _isEmpty from 'lodash/isEmpty';
 import logo from "../../../assets/images/favi.png";
 import { getUserDetails } from '../../../actions/LoginAction';
-import { loginData } from '../../../common/Constants'
+import { loginData } from '../../../common/Constants';
+import Loader from '../../../components/Loader/Loader';
 import './LoginPage.css';
 
 export class LoginPage extends Component {
@@ -27,6 +28,7 @@ export class LoginPage extends Component {
             pwdError: false,
             isSuccess: false,
             isBothWrong: false,
+            isSkipLoader: false,
             text: ''
         }
     }
@@ -63,12 +65,14 @@ export class LoginPage extends Component {
                 isSuccess: true,
                 pwdError: false,
                 userError: false,
-                isBothWrong: false
+                isBothWrong: false,
+                isSkipLoader: true
             });
             e.target.user.value = "";
             e.target.password.value = "";
             /* istanbul ignore next */
             setTimeout(() => {
+                this.setState({ isSkipLoader: false });
                 window.location.href = '/home';
             }, 500);
         } else {
@@ -82,7 +86,7 @@ export class LoginPage extends Component {
     };
 
     render() {
-        const { userError, pwdError, isSuccess, text, isBothWrong } = this.state;
+        const { userError, pwdError, isSuccess, text, isBothWrong, isSkipLoader } = this.state;
         return (
             <div id="Login">
                 <div className={"App"}>
@@ -111,6 +115,7 @@ export class LoginPage extends Component {
                             <label>{loginData.pwdss}<strong>{loginData.pwdssData}</strong></label></div>
                         {isBothWrong && <label className={('errorMsgBtm')}>{text}</label>}
                         <button className="primary">{loginData.submit}</button>
+                        {isSkipLoader && <Loader />}
                         {isSuccess && <p className={('success')}>{loginData.successful}</p>}
                     </form>
                 </div>

@@ -13,14 +13,14 @@ import ErrorPage from './components/ErrorPage/ErrorPage';
 const routes = (
     <Route>
         <Route path='/' component={LoginPage} />
-        <Route exact path='/loader' component={Loader}/>
+        <Route exact path='/loader' component={Loader} />
         <Route exact path='/home' component={HomePage} />
         <Route exact path='/choose' component={ChoosePage} />
         <Route exact path='/about' component={AboutUs} />
         <Route exact path='/cart' component={Cart} />
         <Route exact path='/contact' component={ContactMe} />
         {/* Error Route 404 Page. */}
-        <Route path='*' component={(ErrorPage)} /> 
+        <Route path='*' component={(ErrorPage)} />
     </Route>
 );
 

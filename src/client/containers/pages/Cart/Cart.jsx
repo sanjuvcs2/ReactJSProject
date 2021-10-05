@@ -32,7 +32,6 @@ function Cart() {
         } else if (valueInt > 0 && valueInt < 100) {
             cloneProducts[index].quantity = valueInt;
         }
-        console.log(cloneProducts, products, PRODUCTS);
         setProducts(cloneProducts);
     };
 

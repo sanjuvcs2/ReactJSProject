@@ -41,13 +41,13 @@ export class Loader extends Component {
                         </div>
                     </div>
                 )}
-                {this.props.spinner && !this.props.isLoading && (
-                    <div className={cx(loaderClass, 'spinnerLoader')}>
-                        <div className={cx('loaderImage', themeConfig.spinnerWrapper)}>
-                            <div automation-id={automationId} className={cx('loadingCircle', themeConfig.loader)} />
-                        </div>
+
+                <div className={cx(loaderClass, 'spinnerLoader')}>
+                    <div className={cx('loaderImage', themeConfig.spinnerWrapper)}>
+                        <div automation-id={automationId} className={cx('loadingCircle', themeConfig.loader)} />
                     </div>
-                )}
+                </div>
+
             </div>
         );
     }

@@ -9,7 +9,7 @@ describe('Reducer:ContactInfoReducer', () => {
     const options = [
         {
             code: '001',
-            codeGroup: 'ZW2WEB',
+            codeGroup: '123',
             shortText: 'Kundenstammdaten',
             selected: true
         },

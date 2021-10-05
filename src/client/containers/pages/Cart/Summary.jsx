@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { summaryData } from '../'
+import { summaryData } from '../../../common/Constants';
 import { formatCurrency } from '../../../common/Utils/Utils';
 
 function Summary({

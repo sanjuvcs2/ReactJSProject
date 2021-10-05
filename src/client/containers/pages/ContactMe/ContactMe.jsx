@@ -77,7 +77,6 @@ export class ContactMe extends Component {
 
     render() {
         const { showContactMe } = this.props;
-        console.log('test..', showContactMe);
         if (!showContactMe) {
             return null;
         }

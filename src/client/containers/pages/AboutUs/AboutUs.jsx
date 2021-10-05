@@ -26,7 +26,6 @@ export class AboutUs extends Component {
 
     render() {
         const { pageContent } = this.props;
-        console.log('pageContent', pageContent);
         return (
             <div className={('container-fluid')} id="aboutus">
                 <Layout />

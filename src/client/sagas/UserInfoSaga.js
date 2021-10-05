@@ -1,5 +1,4 @@
 import { put, takeLatest } from 'redux-saga/effects';
-
 import { GET_USER_INFO_REQUEST, GET_USER_INFO_SUCCESS, GET_USER_INFO_ERROR } from '../actionTypes/UserInfoActionTypes';
 import UserInfoMock from '../mock/UserInfo/UserInfoMock';
 

@@ -7,7 +7,7 @@ import {
     GET_CONTACT_INFO_ERROR
 } from '../actionTypes/ContactMeActionTypes';
 
-function* getContactInfoSaga(action) {
+function* getContactInfoSaga() {
     try {
         const result = data;
         if (result) {

@@ -3,8 +3,9 @@ const data = {
     entries: [
         {
             code: '001',
-            codeGroup: 'ZW2WEB',
-            shortText: 'Kundenstammdaten'
+            codeGroup: '123',
+            shortText: 'Kundenstammdaten',
+            selected: true
         },
         {
             code: '002',

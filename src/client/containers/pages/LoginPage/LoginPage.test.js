@@ -16,10 +16,10 @@ describe('<LoginPage Details />', () => {
         actions,
         loginDetails: {
             data: {
-            nameId: '04',
-            user: 'test',
-            password: 'password',
-            isSuccess: true
+                nameId: '04',
+                user: 'test',
+                password: 'password',
+                isSuccess: true
             }
         }
     };
@@ -55,17 +55,20 @@ describe('<LoginPage Details />', () => {
             userError: true,
             pwdError: true,
             isBothWrong: true,
-            isSuccess: true
+            isSuccess: true,
+            isSkipLoader: true
         });
-        wrapper.setProps({ loginDetails: {
-            data: {
-                nameId: '04',
-                user: 'test1',
-                password: 'password1',
-                isSuccess: true
+        wrapper.setProps({
+            loginDetails: {
+                data: {
+                    nameId: '04',
+                    user: 'test1',
+                    password: 'password1',
+                    isSuccess: true
+                }
             }
-        } });
-        const eventTest = { preventDefault: jest.fn(), target: { user: { value: 'test' }, password : { value: 'password'} } };
+        });
+        const eventTest = { preventDefault: jest.fn(), target: { user: { value: 'test' }, password: { value: 'password' } } };
         test('Invoke onClick event ', () => {
             wrapper.find('form').simulate('submit', eventTest);
         });
@@ -76,28 +79,30 @@ describe('<LoginPage Details />', () => {
     });
 
     describe('Login Page onSubmit ', () => {
-        const wrapper = mount(<LoginPage actions={props.actions} loginDetails={props.loginDetails} />);
-        wrapper.setProps({ loginDetails: {
-            data: {
-                nameId: '04',
-                user: 'test',
-                password: 'password',
-                isSuccess: true
+        const wrapper = shallow(<LoginPage actions={props.actions} loginDetails={props.loginDetails} />);
+        wrapper.setProps({
+            loginDetails: {
+                data: {
+                    nameId: '04',
+                    user: 'test',
+                    password: 'password',
+                    isSuccess: true
+                }
             }
-        } });
-        const event = { preventDefault: jest.fn(), target: { user: { value: '' }, password : { value: 'password'} } };
+        });
+        const event = { preventDefault: jest.fn(), target: { user: { value: '' }, password: { value: 'password' } } };
         test('Invoke onClick event ', () => {
             wrapper.find('form').simulate('submit', event);
         });
-        const eventElse = { preventDefault: jest.fn(), target: { user: { value: 'sss' }, password : { value: 'password'} } };
+        const eventElse = { preventDefault: jest.fn(), target: { user: { value: 'sss' }, password: { value: 'password' } } };
         test('Invoke onClick event ', () => {
             wrapper.find('form').simulate('submit', eventElse);
         });
-        const eventTest = { preventDefault: jest.fn(), target: { user: { value: 'test' }, password : { value: 'password'} } };
+        const eventTest = { preventDefault: jest.fn(), target: { user: { value: 'test' }, password: { value: 'password' } } };
         test('Invoke onClick event ', () => {
             wrapper.find('form').simulate('submit', eventTest);
         });
-        const eventTestTwo = { preventDefault: jest.fn(), target: { user: { value: 'test' }, password : { value: ''} } };
+        const eventTestTwo = { preventDefault: jest.fn(), target: { user: { value: 'test' }, password: { value: '' } } };
         test('Invoke onClick event ', () => {
             wrapper.find('form').simulate('submit', eventTestTwo);
         });

@@ -9,7 +9,7 @@ import dataMock from '../mock/PageContent/PageContent.json';
 
 describe('Reducer:PageContentReducer', () => {
     const data = undefined;
-    const isSuccess= undefined;
+    const isSuccess = undefined;
 
     test('should return intital state', () => {
         const reducer = PageContentReducer(
@@ -19,7 +19,6 @@ describe('Reducer:PageContentReducer', () => {
                 dataMock
             }
         );
-        console.log('test...', reducer);
         expect(reducer).toEqual({ data, isSuccess });
     });
 
