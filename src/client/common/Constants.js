@@ -1,4 +1,4 @@
-// Common Constants for Application.
+// Common Constants for POC Application.
 export const PRODUCTS = [
     {
         image: "https://via.placeholder.com/200x150",
@@ -57,7 +57,7 @@ export const constactData = {
     successful: 'The form has been successfully submitted'
 }
 
-export const  loginData = {
+export const loginData = {
     title: "Let's get started",
     user: "User",
     pwd: 'Password',
@@ -71,4 +71,13 @@ export const  loginData = {
     validUserdata: 'Valid User is required',
     pwdUser: "Password is required",
     wrongValid: "Wrong User or password combination"
+}
+
+export const summaryData = {
+    title: 'Have A Promo Code?',
+    subTotal: "Subtotal",
+    discount: "Discount",
+    tax: "Tax",
+    total: "Total",
+    checkout: "Check Out"
 }

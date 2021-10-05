@@ -23,7 +23,7 @@ describe.only('<ContactMe Page Details />', () => {
                 }
             ],
             concern: 'Concerns',
-            showContactMe: true // this is used to show and hide form
+            showContactMe: true
         }
     };
 
@@ -61,24 +61,24 @@ describe.only('<ContactMe Page Details />', () => {
         const wrapperNew = shallow(<ContactMe showContactMe={false} contactActions={props.contactActions} contactInfo={props.contactInfo} />);
         wrapperNew
         .instance()
-        .onNameChange({ target: { name: 'timePeriodValue', value: 'jhgj', type: 'addUser' } });
+        .onNameChange({ target: { name: 'name', value: 'Name', type: 'addUser' } });
         
         wrapperNew
         .instance()
-        .onEmailChange({ target: { name: 'timePeriodValue', value: 'email', type: 'addUser' } });
+        .onEmailChange({ target: { name: 'email', value: 'email', type: 'addUser' } });
 
         wrapperNew
         .instance()
-        .onSubjectChange({ target: { name: 'timePeriodValue', value: 'email', type: 'addUser' } });
+        .onSubjectChange({ target: { name: 'subject', value: 'subject', type: 'addUser' } });
 
         wrapperNew
         .instance()
-        .onSubjectChange({ target: { name: 'timePeriodValue', value: 'email', type: 'addUser' } });
+        .onSubjectChange({ target: { name: 'sub', value: 'message', type: 'addUser' } });
     
     
         wrapperNew
         .instance()
-        .onMsgChange({ target: { name: 'timePeriodValue', value: 'email', type: 'addUser' } });
+        .onMsgChange({ target: { name: 'msg', value: 'msg' } });
 
          wrapperNew.setState({ formSuccess: true });
         //const eventElse = { preventDefault: jest.fn(), target:  { value: 'sss' } };
@@ -89,6 +89,5 @@ describe.only('<ContactMe Page Details />', () => {
         .submitEmail({ preventDefault: jest.fn(), target: { name: 'timePeriodValue', value: 'email', type: 'addUser' } });
         wrapperNew.setState({ formSuccess: false });
     });
-
     });
 });

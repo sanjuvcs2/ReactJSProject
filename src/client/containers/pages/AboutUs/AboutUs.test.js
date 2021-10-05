@@ -1,10 +1,10 @@
 import React from 'react';
-import { mount, shallow } from 'enzyme';
+import { mount} from 'enzyme';
 import { Provider } from 'react-redux';
 import configureMockStore from 'redux-mock-store';
 import AboutUsConnect, { AboutUs } from './AboutUs';
 
-describe('<AboutUs Details />', () => {
+describe('<AboutUs Page Details />', () => {
     let wrapper;
     const mockStore = configureMockStore([]);
     const store = mockStore();

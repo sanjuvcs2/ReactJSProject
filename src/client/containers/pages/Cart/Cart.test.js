@@ -7,7 +7,7 @@ import Summary from './Summary';
 
 const mockStore = configureMockStore();
 
-describe('Component: Cart', () => {
+describe('Component: Cart Page', () => {
     const onChangeProductQuantity = jest.fn();
     let wrapper;
     const actions = {

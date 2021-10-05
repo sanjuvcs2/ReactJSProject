@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { summaryData } from '../'
 import { formatCurrency } from '../../../common/Utils/Utils';
 
 function Summary({
@@ -13,7 +14,7 @@ function Summary({
   return (
     <section className="container" id="summary">
       <div className="promotion">
-        <label htmlFor="promo-code">Have A Promo Code?</label>
+        <label htmlFor="promo-code">{summaryData.title}</label>
         <input type="text" id="promCode" onChange={onEnterPromoCode} />
         <button type="button" onClick={checkPromoCode} />
       </div>
@@ -21,24 +22,24 @@ function Summary({
       <div className="summary">
         <ul>
           <li>
-            Subtotal <span>{formatCurrency(subTotal)}</span>
+            {summaryData.subTotal} <span>{formatCurrency(subTotal)}</span>
           </li>
           {discount > 0 && (
             <li>
-              Discount <span>{formatCurrency(discount)}</span>
+              {summaryData.discount} <span>{formatCurrency(discount)}</span>
             </li>
           )}
           <li>
-            Tax <span>{formatCurrency(tax)}</span>
+            {summaryData.tax} <span>{formatCurrency(tax)}</span>
           </li>
           <li className="total">
-            Total <span>{formatCurrency(total)}</span>
+            {summaryData.total} <span>{formatCurrency(total)}</span>
           </li>
         </ul>
       </div>
 
       <div className="checkout">
-        <button type="button">Check Out</button>
+        <button type="button">{summaryData.checkout}</button>
       </div>
     </section>
   );

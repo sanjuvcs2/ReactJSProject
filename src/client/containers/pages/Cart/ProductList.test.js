@@ -19,11 +19,13 @@ describe('Component: ProductList', () => {
 
     describe('Render ProductList with all props', () => {
         const wrapper2 = shallow(
-            <ProductList labelText='Ckeck Box Label Here'  products={PRODUCTS}  onChange={() => {}} />
+            <ProductList products={PRODUCTS}  onChange={() => {}} />
         );
 
+        expect(wrapper2.find('.ListContainer')).toHaveLength(1);
+
         const renderComponent = () =>
-            shallow(<ProductList labelText='Ckeck Box Label Here'  products={PRODUCTS} />);
+            shallow(<ProductList  products={PRODUCTS} />);
 
         beforeEach(() => {
             wrapper = renderComponent();
@@ -52,7 +54,7 @@ describe('Component: ProductList', () => {
             />
         );
 
-        test('Ckeck Box - Invoke click event', () => {
+        test('Invoke click event', () => {
             wrapper.find('.ListContainer').find('input[type="text"]').at(1).simulate('change');
             wrapper.find('.ListContainer').find('svg').at(1).simulate('click');
             expect(handleOnChange).toHaveBeenCalled();
